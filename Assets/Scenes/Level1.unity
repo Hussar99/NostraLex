@@ -198,6 +198,7 @@ GameObject:
   - component: {fileID: 18850359}
   - component: {fileID: 18850358}
   - component: {fileID: 18850360}
+  - component: {fileID: 18850361}
   m_Layer: 0
   m_Name: Portal
   m_TagString: Untagged
@@ -327,6 +328,18 @@ PolygonCollider2D:
       - {x: 0.88, y: -1.13}
       - {x: 0.85999995, y: -1.11}
       - {x: 0.17, y: -1.11}
+--- !u!114 &18850361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 18850357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccacc0371f6031441b8947982be3c288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: Level2
 --- !u!1 &177839851
 GameObject:
   m_ObjectHideFlags: 0

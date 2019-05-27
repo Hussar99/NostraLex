@@ -43290,6 +43290,7 @@ GameObject:
   - component: {fileID: 1898041132}
   - component: {fileID: 1898041131}
   - component: {fileID: 1898041133}
+  - component: {fileID: 1898041134}
   m_Layer: 0
   m_Name: Ottoman Tent - 1
   m_TagString: Untagged
@@ -43462,6 +43463,18 @@ PolygonCollider2D:
       - {x: -0.17, y: -2.1499999}
       - {x: 0.11, y: -2.1499999}
       - {x: 0.12, y: -2.1399999}
+--- !u!114 &1898041134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1898041130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccacc0371f6031441b8947982be3c288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: Level3
 --- !u!1 &2073710564
 GameObject:
   m_ObjectHideFlags: 0
