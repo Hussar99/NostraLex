@@ -2,15 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// This allows to use the scene loading function.
+using UnityEngine.SceneManagement;
+
 public class TitleButton : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    // Called when the button  is clicked.
+    public void GoToTitle()
+    {
+
+        //  Return to title screen.
+        SceneManager.LoadScene("MainMenu");
+
+    }
+
 }

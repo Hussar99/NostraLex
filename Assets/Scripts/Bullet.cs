@@ -4,13 +4,52 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    public bool isPlayer = true;
+    public float velX = 100f;
+    float velY = 0f;
+
+    Rigidbody2D rb; // Use bigger abbriviations for better context. fore example: rigidBody
+
+
+    // Unity calls this function automatically
+    // When our bullet touches any other object
+    private void OnCollisionEnter2D(Collision2D collsion)
+    {
+
+        //Check if the thing that we collided with is the player
+        Player playerScript = collsion.collider.GetComponent<Player>();
+
+
+        // Only do something if the thing we run into was in fact the player (aka playerScript is not null)
+
+        if (playerScript != null && isPlayer == false)
+        {
+            // We DID hit the player!
+
+            //KILL THEM!
+            playerScript.Kill();
+
+
+
+        }
+
+    }
+
+
+    // Use this for initialization
+    void Start () {
+
+        rb = GetComponent<Rigidbody2D>();
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+
+        // Sets players bullet velocity.
+        rb.velocity = new Vector2(velX, velY);
+        // Destroys players bullet after 3 seconds
+        Destroy(gameObject, 1f);
+
+    }
 }

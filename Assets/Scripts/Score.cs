@@ -23,10 +23,7 @@ public class Score : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-        // Store the result in our numerical score variable.
-        Debug.Log("Loading Score. Score was: " + numericalScore);
-        numericalScore = PlayerPrefs.GetInt("score", 0);
-        Debug.Log("Sore of " + numericalScore + " was loaded");
+   
 
         // Update the visual score.
         scoreText.text = numericalScore.ToString();
@@ -48,14 +45,6 @@ public class Score : MonoBehaviour {
 
         //Updarte the visual score.
         scoreText.text = numericalScore.ToString();
-    }
-
-    // Function to save the score to the player preferences.
-    // Pulic so it can be triggered form another script (aka door/portal)
-    public void saveScore()
-    {
-        Debug.Log("Saving Score of " + numericalScore);
-        PlayerPrefs.SetInt("score", numericalScore);
     }
 
 
