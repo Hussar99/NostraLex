@@ -61,10 +61,10 @@ public class Player : MonoBehaviour {
 
 
         // Detect if we are touching the ground
-        LayerMask groundLayerMask = LayerMask.GetMask("Ground");
+        LayerMask TilemapLayerMask = LayerMask.GetMask("Default");
 
         // Ask layer collider if we are touching the LayerMask
-        bool TouchingGround = playerCollider.IsTouchingLayers(groundLayerMask);
+        bool TouchingGround = playerCollider.IsTouchingLayers(TilemapLayerMask);
 
         bool jumpButtonPressed = Input.GetButtonDown(jumpButton);
         if (jumpButtonPressed == true && TouchingGround == true)

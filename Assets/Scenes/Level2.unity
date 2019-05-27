@@ -43477,7 +43477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  jumpSpeed: 20
+  jumpSpeed: 5
   physicsBody: {fileID: 1104423206}
   horizontalAxis: Horizontal
   jumpButton: Jump
