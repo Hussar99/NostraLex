@@ -136,7 +136,7 @@ public class Player : MonoBehaviour {
         bulletPos = transform.position;
         {
             // Selecting the exact position where the bullet will spown and start traveling.
-            bulletPos += new Vector2(+0.79f, -0.40f);
+            bulletPos += new Vector2(+0.79f, -0.80f);
             Instantiate(playersBullet, bulletPos, Quaternion.identity);
 
         }
