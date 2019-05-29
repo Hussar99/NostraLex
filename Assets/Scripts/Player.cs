@@ -75,6 +75,10 @@ public class Player : MonoBehaviour {
             // Give the velocity to rigidbody
             physicsBody.velocity = velocity;
 
+            // Play the gallop sound.
+            FindObjectOfType<AudioManager>().Play("HorseGallop");
+
+
 
         }
 
@@ -106,7 +110,9 @@ public class Player : MonoBehaviour {
         {
             //If the game is over...
             // Load the the Game over scene.
+
             SceneManager.LoadScene("DefeatLevel");
+
 
         }
         else
@@ -116,11 +122,15 @@ public class Player : MonoBehaviour {
 
             // Reset the current level to reset from the beggining.
 
+           
             // First, ask unity what the current level is
             Scene currentLevel = SceneManager.GetActiveScene();
 
             // Second, tell unity to load the current level again by passing the build index of our level
             SceneManager.LoadScene(currentLevel.buildIndex);
+
+
+            
 
         }
 
