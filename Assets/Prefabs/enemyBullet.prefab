@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  velX: -10
+  velX: -8
 --- !u!212 &212346159709500550
 SpriteRenderer:
   m_ObjectHideFlags: 1
